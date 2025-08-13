@@ -36,10 +36,20 @@ p, li {
     font-weight: 300;
 }
 
-li {
-  list-style: none;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
 }
 
+a {
+    color: #019EDB;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 .btn {
     text-transform: uppercase;
     transition: all 0.5s ease;
@@ -72,7 +82,7 @@ li {
     transition: all 0.5s ease;
 }
 
-.servicios spam {
+.servicios span {
     text-align: center;
     color: #929292;
     font-weight: 400;
@@ -94,6 +104,9 @@ li {
     img {
         scale: 110%;
     }
+}
+.productos a {
+    color: #000;
 }
 
 .color-1 {
