@@ -12,18 +12,27 @@ add.addEventListener('click', () => {
     add.classList.toggle('btn-success')
     add.classList.toggle('btn-danger')
 
-    btnAddAll.forEach(btn => {
-        btn.classList.toggle('d-none')
-        btn.classList.toggle('d-inline')
-    })
-
     addIcon.classList.toggle('bi-check-lg')
     addIcon.classList.toggle('bi-x-lg')
 
     if (producto === 0) {
         addTxt.textContent = 'Quitar de consultas'
+        btnAddAll.forEach(btn => {
+            btn.classList.toggle('d-none')
+            btn.classList.toggle('d-inline')
+                setTimeout(() => {
+                    btn.classList.toggle('btnScale')
+                }, 300)
+        })
     } else {
         addTxt.textContent = 'Agregar a consultas'
+        btnAddAll.forEach(btn => {
+            btn.classList.toggle('btnScale')
+                setTimeout(() => {
+                    btn.classList.toggle('d-none')
+                    btn.classList.toggle('d-inline')
+                }, 300)
+        })
     }
     
     // operador ternario => condición ? valor_si_true : valor_si_false
