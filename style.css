@@ -49,17 +49,17 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.btn {
+.menu .btn {
     text-transform: uppercase;
+    font-size: 12px;
     transition: all 0.5s ease;
 }
-.menu .btn {
-    font-size: 12px;
-}
-.btn:hover {
+
+.menu .btn:hover {
     transform: translate(0,-5px);
 }
 .btn-consulta{
+    text-transform: uppercase;
     font-size: 12px;
 }
 #movil {
