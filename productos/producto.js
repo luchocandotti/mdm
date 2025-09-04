@@ -16,7 +16,7 @@ add.addEventListener('click', () => {
     addIcon.classList.toggle('bi-x-lg')
 
     if (producto === 0) {
-        addTxt.textContent = 'Quitar de consultas'
+        addTxt.textContent = 'Quitar de mi lista'
         btnAddAll.forEach(btn => {
             btn.classList.toggle('d-none')
             btn.classList.toggle('d-inline')
@@ -25,7 +25,7 @@ add.addEventListener('click', () => {
                 }, 300)
         })
     } else {
-        addTxt.textContent = 'Agregar a consultas'
+        addTxt.textContent = 'Agregar a mi lista'
         btnAddAll.forEach(btn => {
             btn.classList.toggle('btnScale')
                 setTimeout(() => {
