@@ -23,18 +23,18 @@
         <div class="tapa ms-auto position-fixed start-0 z-3"></div>
         <div class="container">
             <nav class="d-flex align-items-center pt-4">
-                <img src="mdm_logo.svg" alt="MDM Pinturas" class="logo">
+                <a href="../index.html"><img src="../mdm_logo.svg" alt="MDM Pinturas" class="logo"></a>
                 <!-- Menú desktop -->
-                <div id="" class="ms-auto d-flex align-items-center gap-2 z-2">
+                <div class="ms-auto d-flex align-items-center gap-2 z-2">
                     <div class="menu d-none d-md-block">
                         <button type="button" class="btn btn-warning me-2 shadow-sm px-4 rounded-1">Productos</button>
                         <button type="button" class="btn btn-warning me-2 shadow-sm px-4 rounded-1">Nosotros</button>
                         <button type="button" class="btn btn-warning me-2 shadow-sm px-4 rounded-1">Contacto</button>
                         <button type="button" class="btn btn-dark text-warning me-2 shadow-sm rounded-1"><i class="bi bi-search"></i></button>
-                        <button type="button" class="btn btn-primary text-light shadow-sm rounded-1"><i class="bi bi-check-square"></i></button>
+                        <button type="button" id="btn-desk" class="btn btn-add btn-success text-light shadow-sm rounded-1 d-none"><i class="bi bi-check-lg"></i></button>
                     </div>
                     <!-- Menú movil -->
-                        <button id="btn-check" type="button" class="btn btn-success text-light shadow-sm pt-2 rounded-1 d-block d-md-none"><i class="bi bi-check-square"></i></button>
+                        <button type="button" id="btn-m" class="btn btn-add btn-success text-light shadow-sm pt-2 rounded-1 d-none d-md-none"><i class="bi bi-check-lg"></i></button>
                         <button id="btn-movil" type="button" class="btn btn-warning shadow-sm pt-2 rounded-1 d-block d-md-none"><i class="bi bi-list"></i></button>
                     
                     <div id="movil" class="position-fixed bg-warning top-0 start-0 w-100 h-50 z-1 d-flex flex-column justify-content-center align-items-center shadow-sm">
