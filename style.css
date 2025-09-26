@@ -172,11 +172,6 @@ a:hover {
     .carousel-inner {
         height: 200px;
     }
-    .carousel-item img{
-        height: 200px;
-        object-fit: cover;
-        object-position: center right;
-    }
     .carousel-item {
         transition: transform 0.4s ease-in-out;
     }
