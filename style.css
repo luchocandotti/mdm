@@ -201,4 +201,7 @@ textarea {
     .servicios span {
     font-size: 9px;
     }
+    .tapa {
+    transform: translateY(-49.5vh); /* mejor -50vh en vez de -49vh */
+    }
 }
