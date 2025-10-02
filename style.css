@@ -14,9 +14,9 @@ body{
     font-size: 14px;
 }
 .tapa {
-    width: 100vh;
+    width: 100vw;   /* ancho del viewport, no altura */
     height: 50vh;
-    transform: translateY(-49vh);
+    transform: translateY(-50vh); /* mejor -50vh en vez de -49vh */
     background-color: #F8F8F8;
 }
 
@@ -71,6 +71,21 @@ a:hover {
 }
 #intro {
     transition: all 0.5s ease-in-out;
+}
+#productos {
+    scroll-margin-top: 50px; /* Ajusta los píxeles que necesites */
+}
+#contacto {
+    scroll-margin-top: 50px; /* Ajusta los píxeles que necesites */
+}
+textarea {
+  resize: none; /* desactiva el resize */
+}
+.form-control:focus {
+  border-color: #ced4da; /* Mantiene el borde gris original */
+  box-shadow: none;
+  background-color: #fff9e6;
+  outline: none; /* Elimina el outline por defecto */
 }
 
 
@@ -169,14 +184,14 @@ a:hover {
     .container {
         padding: 0 40px 0 40px;
     }
-    .carousel-inner {
+    /* .carousel-inner {
         height: 200px;
     }
     .carousel-item img{
         height: 200px;
         object-fit: cover;
         object-position: center;
-    }
+    } */
     .carousel-item {
         transition: transform 0.4s ease-in-out;
     }

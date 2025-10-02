@@ -8,7 +8,7 @@ const addTxt = document.getElementById('add-txt')
 const btnDesk = document.getElementById('btn-desk')
 const btnMovil = document.getElementById('btn-m')
 
-add.addEventListener('click', () => {
+/*add.addEventListener('click', () => {
     add.classList.toggle('btn-success')
     add.classList.toggle('btn-danger')
 
@@ -39,13 +39,15 @@ add.addEventListener('click', () => {
     producto = producto === 0 ? 1 : 0
     console.log(producto === 1 ? 'agregado' : 'quitado')
 })
+*/
 
 function wasap(e) {
     e.preventDefault() // Si son enlaces
         const mensaje = `Hola, quiero consultar presupuesto de '${id.textContent}'`
-        const url = `https://wa.me/+5493765252764?text=${encodeURIComponent(mensaje)}`
+        const url = `https://wa.me/+5493764616587?text=${encodeURIComponent(mensaje)}`
         window.open(url, '_blank')
 }
 
 btnDesk.addEventListener('click', wasap)
 btnMovil.addEventListener('click', wasap)
+add.addEventListener('click', wasap)

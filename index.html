@@ -27,10 +27,10 @@
                 <!-- Menú desktop -->
                 <div class="ms-auto d-flex align-items-center gap-2 z-2">
                     <div class="menu d-none d-md-block">
-                        <button type="button" class="btn btn-warning me-2 shadow-sm px-4 rounded-1">Productos</button>
-                        <button type="button" class="btn btn-warning me-2 shadow-sm px-4 rounded-1">Nosotros</button>
-                        <button type="button" class="btn btn-warning me-2 shadow-sm px-4 rounded-1">Contacto</button>
-                        <button type="button" class="btn btn-dark text-warning me-2 shadow-sm rounded-1"><i class="bi bi-search"></i></button>
+                        <button type="button" class="btn btn-warning btn-productos me-2 shadow-sm px-4 rounded-1">Productos</button>
+                        <!-- <button type="button" class="btn btn-warning me-2 shadow-sm px-4 rounded-1">Nosotros</button> -->
+                        <button type="button" class="btn btn-warning btn-contacto me-2 shadow-sm px-4 rounded-1">Contacto</button>
+                        <!-- <button type="button" class="btn btn-dark text-warning me-2 shadow-sm rounded-1"><i class="bi bi-search"></i></button> -->
                         <button type="button" id="btn-desk" class="btn btn-add btn-success text-light shadow-sm rounded-1 d-none pe-3"><i class="bi bi-check-lg me-2"></i>Mi lista</button>
                     </div>
                     <!-- Menú movil -->
@@ -38,13 +38,14 @@
                         <button id="btn-movil" type="button" class="btn btn-warning shadow-sm pt-2 rounded-1 d-block d-md-none"><i class="bi bi-list"></i></button>
                     
                     <div id="movil" class="position-fixed bg-warning top-0 start-0 w-100 h-50 z-1 d-flex flex-column justify-content-center align-items-center shadow-sm">
-                        <button type="button" class="btn btn-light mb-3 shadow-sm px-4 rounded-1">Productos</button>
-                        <button type="button" class="btn btn-light mb-3 shadow-sm px-4 rounded-1">Nosotros</button>
-                        <button type="button" class="btn btn-light mb-3 shadow-sm px-4 rounded-1">Contacto</button>
-                        <button type="button" class="btn btn-dark text-warning shadow-sm rounded-1"><i class="bi bi-search"></i></button>
+                        <button type="button" class="btn btn-light btn-productos mb-3 shadow-sm px-4 rounded-1">Productos</button>
+                        <!-- <button type="button" class="btn btn-light mb-3 shadow-sm px-4 rounded-1">Nosotros</button> -->
+                        <button type="button" class="btn btn-light btn-contacto mb-3 shadow-sm px-4 rounded-1">Contacto</button>
+                        <!-- <button type="button" class="btn btn-dark text-warning shadow-sm rounded-1"><i class="bi bi-search"></i></button> -->
                     </div>
                 </div>
             </nav>
+            <!-- <p id="width"></p> -->
             <h1 class="text-dark my-4 titulo h2">Pinturas, impermeabilización y revestimientos con asesoramiento técnico de especialistas en obra.</h1>
 
             <div class="row g-3">
@@ -84,7 +85,7 @@
             
             <h2 class="fw-light titulo h5 my-4">12 Años de experiencia brindando soluciones personalizadas a constructoras y profesionales de la construcción en Posadas — Misiones.</h2>
 
-            <div id="carouselOferta" class="carousel slide z-0" data-bs-touch="true">
+            <div id="carouselOferta" class="carousel shadow slide z-0" data-bs-touch="true">
                 <div class="carousel-inner rounded-1">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselOferta" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -102,8 +103,8 @@
                     </div>
                 </div>
             </div>
-
-            <h2 class="titulo h5 my-4">Productos destacados:</h2>
+<!-- productos ------------------------------------------------------------------------------------------------------------- -->
+            <h2 id="productos" class="titulo h5 my-4">Productos destacados:</h2>
 
             <div class="row g-3 mb-5">
                 <div class="col-6 col-lg-3">
@@ -207,6 +208,23 @@
                     </div>
                 </div>
             </div>
+<!-- contacto ------------------------------------------------------------------------------------------------------------- -->
+            <section id="contacto">
+                <h2 class="titulo h5 my-4">Contacto:</h2>
+                <form class="mb-5">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-1" id="nombre" placeholder="Nombre y apellido" required>
+                        <label for="nombre">Nombre y apellido:</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control rounded-1" id="consulta" placeholder="Consulta" rows="4" style="height: 100px" required></textarea>
+                        <label for="consulta">Consulta:</label>
+                    </div>
+                    <button type="submit" class="btn btn-warning btn-productos me-2 shadow-sm px-4 rounded-1">
+                        <i class="bi bi-whatsapp me-2"></i>Enviar
+                    </button>
+                </form>
+            </section>
 
 <!-- about ------------------------------------------------------------------------------------------------------------- -->
         <!-- <section class="row mb-5">
