@@ -8,6 +8,8 @@ const addTxt = document.getElementById('add-txt')
 const btnDesk = document.getElementById('btn-desk')
 const btnMovil = document.getElementById('btn-m')
 
+const back = document.getElementById('back')
+
 /*add.addEventListener('click', () => {
     add.classList.toggle('btn-success')
     add.classList.toggle('btn-danger')
@@ -48,6 +50,11 @@ function wasap(e) {
         window.open(url, '_blank')
 }
 
+function goBack() {
+    window.location.href = '../index.html'
+}
+
 btnDesk.addEventListener('click', wasap)
 btnMovil.addEventListener('click', wasap)
 add.addEventListener('click', wasap)
+back.addEventListener('click', goBack)
