@@ -51,22 +51,30 @@ btnProductos.forEach(btn => {
         //document.getElementById('width').innerText = window.innerWidth
         if (window.location.pathname != '/index.html') {
             window.location.href = '../index.html'
+            return
         }
         const elementoDestino = document.getElementById('productos')
         if (elementoDestino) {
             if (window.innerWidth <= 768) {
-                menuar()
+                menuar();
+                
+                // Scroll con offset en móvil
+                const elementPosition = elementoDestino.getBoundingClientRect().top;
+                const offsetVh = window.innerHeight * 0.54;
+                const offsetPosition = elementPosition + window.pageYOffset - offsetVh
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                })
+            } else {
+                // Scroll normal en desktop
+                elementoDestino.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
             }
-            // if (window.location.pathname !== '/index.html') {
-            //     console.log('no estoy en index')
-            //     window.location.href = '../index.html'
-            // }
-            elementoDestino.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            })
         }
-        console.log(window.location.pathname)
     })
 })
 

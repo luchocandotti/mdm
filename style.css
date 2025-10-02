@@ -180,7 +180,7 @@ textarea {
 }
 
 
-@media(max-width:576px) {
+@media(max-width:768px) {
     .container {
         padding: 0 40px 0 40px;
     }
@@ -201,7 +201,10 @@ textarea {
     .servicios span {
     font-size: 9px;
     }
+    .servicios:hover {
+        transform: none;
+    }
     .tapa {
-    transform: translateY(-49.5vh); /* mejor -50vh en vez de -49vh */
+    transform: translateY(-49.5vh);
     }
 }
