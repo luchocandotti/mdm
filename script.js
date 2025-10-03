@@ -50,7 +50,7 @@ btnProductos.forEach(btn => {
                 
                 // Scroll con offset en móvil
                 const elementPosition = elementoDestino.getBoundingClientRect().top;
-                const offsetVh = window.innerHeight * 0.54;
+                const offsetVh = window.innerHeight * 0.54
                 const offsetPosition = elementPosition + window.pageYOffset - offsetVh
                 
                 window.scrollTo({
@@ -97,6 +97,18 @@ function wasap(e) {
     const url = `https://wa.me/+5493764616587?text=${encodeURIComponent(mensaje)}`
     window.open(url, '_blank')
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+  if (window.location.hash === '#contacto') {
+    const inputNombre = document.getElementById('nombre')
+    if (inputNombre) {
+      // Pequeño delay para asegurar que el scroll termine
+      setTimeout(() => {
+        inputNombre.focus()
+      }, 100)
+    }
+  }
+})
 
 formulario.addEventListener('submit', wasap)
 
