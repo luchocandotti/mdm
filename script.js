@@ -50,7 +50,7 @@ btnProductos.forEach(btn => {
     btn.addEventListener('click', () => {
         //document.getElementById('width').innerText = window.innerWidth
         if (window.location.pathname != '/index.html') {
-            window.location.href = '../index.html'
+            window.location.href = '../index.html#productos'
             return
         }
         const elementoDestino = document.getElementById('productos')
@@ -81,7 +81,7 @@ btnProductos.forEach(btn => {
 btnContacto.forEach(btn => {
     btn.addEventListener('click', () => {
         if (window.location.pathname != '/index.html') {
-            window.location.href = '../index.html'
+            window.location.href = '../index.html#contacto'
         }
         const elementoDestino = document.getElementById('contacto')
         if (elementoDestino) {
