@@ -36,16 +36,6 @@ function menuar() {
     }
 }
 
-// btnProductos.addEventListener('click', () => {
-//     const elementoDestino = document.getElementById('productos')
-//     if (elementoDestino) {
-//         elementoDestino.scrollIntoView({ 
-//             behavior: 'smooth', 
-//             block: 'start' 
-//         })
-//     }
-// })
-
 btnProductos.forEach(btn => {
     btn.addEventListener('click', () => {
         //document.getElementById('width').innerText = window.innerWidth
@@ -109,3 +99,16 @@ function wasap(e) {
 }
 
 formulario.addEventListener('submit', wasap)
+
+
+
+
+// btnProductos.addEventListener('click', () => {
+//     const elementoDestino = document.getElementById('productos')
+//     if (elementoDestino) {
+//         elementoDestino.scrollIntoView({ 
+//             behavior: 'smooth', 
+//             block: 'start' 
+//         })
+//     }
+// })
