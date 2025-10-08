@@ -50,7 +50,7 @@ btnProductos.forEach(btn => {
                 
                 // Scroll con offset en móvil
                 const elementPosition = elementoDestino.getBoundingClientRect().top;
-                const offsetVh = window.innerHeight * 0.54
+                const offsetVh = window.innerHeight * 0.53
                 const offsetPosition = elementPosition + window.pageYOffset - offsetVh
                 
                 window.scrollTo({
@@ -68,21 +68,35 @@ btnProductos.forEach(btn => {
     })
 })
 
+// btnProductos.forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         //document.getElementById('width').innerText = window.innerWidth
+//         if (window.location.pathname != '/index.html') {
+//             window.location.href = '../index.html#productos'
+//             return
+//         }
+
+//         if (window.innerWidth <= 768) {
+//             menuar();
+//         } 
+            
+//         window.location.href = '#productos'
+//     })
+// })
+
 btnContacto.forEach(btn => {
     btn.addEventListener('click', () => {
         if (window.location.pathname != '/index.html') {
             window.location.href = '../index.html#contacto'
+            return
         }
-        const elementoDestino = document.getElementById('contacto')
-        if (elementoDestino) {
-            if (window.innerWidth <= 768) {
-                menuar()
-            }
-            elementoDestino.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            })
+        
+        if (window.innerWidth <= 768) {
+            menuar()
         }
+           
+        window.location.href = '#contacto'
+        hacerFocus()
     })
 })
 
@@ -98,8 +112,8 @@ function wasap(e) {
     window.open(url, '_blank')
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  if (window.location.hash === '#contacto') {
+function hacerFocus() {
+    if (window.location.hash === '#contacto') {
     const inputNombre = document.getElementById('nombre')
     if (inputNombre) {
       // Pequeño delay para asegurar que el scroll termine
@@ -108,6 +122,10 @@ window.addEventListener('DOMContentLoaded', () => {
       }, 100)
     }
   }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  hacerFocus()
 })
 
 formulario.addEventListener('submit', wasap)
