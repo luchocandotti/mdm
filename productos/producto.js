@@ -51,7 +51,7 @@ function wasap(e) {
 }
 
 function goBack() {
-    window.location.href = '../index.html'
+    window.location.href = '../index.html#productos'
 }
 
 btnDesk.addEventListener('click', wasap)
