@@ -7,6 +7,8 @@ const tapa = document.querySelector('.tapa')
 const btnProductos = document.querySelectorAll('.btn-productos')
 const btnContacto = document.querySelectorAll('.btn-contacto')
 const formulario = document.querySelector('form')
+const leer = document.getElementById('leer')
+const about = document.getElementById('about')
 
 btnmenu.addEventListener('click', () => {
     menuar()
@@ -129,6 +131,22 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 formulario.addEventListener('submit', wasap)
+
+function abrirAbout () {
+    about.classList.toggle('nomuestra')
+
+    // Cambiar texto e icono
+    if (leer.innerText.includes('Leer más')) {
+        leer.innerHTML = 'Leer menos<i class="bi bi-arrow-up ms-2"></i>'
+    } else {
+        leer.innerHTML = 'Leer más<i class="bi bi-arrow-down ms-2"></i>'
+    }
+}
+
+leer.addEventListener('click', () => {
+    abrirAbout()
+})
+
 
 
 
