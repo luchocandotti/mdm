@@ -174,19 +174,6 @@ textarea {
     padding: 11px 0 11px 0;
 }
 
-.color-1 {
-    background-color: #019EDB;
-}
-.color-2 {
-    background-color: #8CC63F;
-}
-.color-3 {
-    background-color: #FBAD17;
-}
-.color-4 {
-    background-color: #B468A0;
-}
-
 .tabla-redondeada {
     border-radius: 0.375rem;
     overflow: hidden;
@@ -246,10 +233,30 @@ textarea {
   max-height: 1000px;
   opacity: 1;
   overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.3s ease;
+  transition: max-height 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 #about.nomuestra {
   max-height: 0;
   opacity: 0;
+}
+
+.flecha li:nth-child(1) i {
+  color: #019EDB;
+}
+
+.flecha li:nth-child(2) i {
+  color: #33BB9C;
+}
+
+.flecha li:nth-child(3) i {
+  color: #8CC63F;
+}
+
+.flecha li:nth-child(4) i {
+  color: #FBAD17;
+}
+
+.flecha li:nth-child(5) i {
+  color: #B468A0;
 }
