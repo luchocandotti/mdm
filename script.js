@@ -137,14 +137,18 @@ function abrirAbout () {
     about.classList.toggle('nomuestra')
 
     // Cambiar texto e icono
-    if (leer.innerText.includes('Leer más')) {
-        leer.innerHTML = 'Leer menos<i class="bi bi-arrow-up ms-2"></i>'
+    if (leer.innerText.includes('LEER MÁS')) {
+        leer.innerHTML = 'LEER MENOS<i class="bi bi-arrow-up ms-2"></i>'
+        leer.classList.remove('btn-tertiary')
+        leer.classList.add('btn-secondary')
         setTimeout(() => {
             window.location.hash = '#nosotros'
         }, 100)
         
     } else {
-        leer.innerHTML = 'Leer más<i class="bi bi-arrow-down ms-2"></i>'
+        leer.innerHTML = 'LEER MÁS<i class="bi bi-arrow-down ms-2"></i>'
+        leer.classList.add('btn-tertiary')
+        leer.classList.remove('btn-secondary')
         setTimeout(() => {
             history.pushState('', document.title, window.location.pathname)
             // window.location.hash = '#'
