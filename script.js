@@ -7,6 +7,7 @@ const tapa = document.querySelector('.tapa')
 const btnProductos = document.querySelectorAll('.btn-productos')
 const btnContacto = document.querySelectorAll('.btn-contacto')
 const formulario = document.querySelector('form')
+const servicios = document.querySelectorAll('.servicios')
 const leer = document.getElementById('leer')
 const about = document.getElementById('about')
 
@@ -138,14 +139,50 @@ function abrirAbout () {
     // Cambiar texto e icono
     if (leer.innerText.includes('Leer más')) {
         leer.innerHTML = 'Leer menos<i class="bi bi-arrow-up ms-2"></i>'
+        setTimeout(() => {
+            window.location.hash = '#nosotros'
+        }, 100)
+        
     } else {
         leer.innerHTML = 'Leer más<i class="bi bi-arrow-down ms-2"></i>'
+        setTimeout(() => {
+            history.pushState('', document.title, window.location.pathname)
+            // window.location.hash = '#'
+        }, 100)
     }
 }
+
+servicios.forEach((servicio) => {
+    servicio.addEventListener('click', () => {
+        abrirAbout()
+    })
+})
+
 
 leer.addEventListener('click', () => {
     abrirAbout()
 })
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const carouselElement = document.querySelector('#carouselOferta')
+  
+  if (carouselElement) {
+    // Forzar inicialización
+    const carousel = new bootstrap.Carousel(carouselElement, {
+      interval: 5000,
+      touch: true, // Asegurar que touch esté habilitado
+      wrap: true
+    });
+    
+    // Forzar un pequeño movimiento para activar eventos táctiles
+    setTimeout(() => {
+      carousel.pause()
+      carousel.cycle()
+    }, 100)
+  }
+});
 
 
 
