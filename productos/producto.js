@@ -1,5 +1,6 @@
 let producto = 0
 const id = document.querySelector('.id')
+const h1 = document.querySelector('h1')
 const btnAddAll = document.querySelectorAll('.btn-add')
 const add = document.getElementById('add')
 const addIcon = document.querySelector('#add .bi')
@@ -45,7 +46,7 @@ const back = document.getElementById('back')
 
 function wasap(e) {
     e.preventDefault() // Si son enlaces
-        const mensaje = `Hola, quiero consultar presupuesto de '${id.textContent}'`
+        const mensaje = `Hola, quiero consultar presupuesto de '${h1.textContent}'`
         const url = `https://wa.me/+5493764616587?text=${encodeURIComponent(mensaje)}`
         window.open(url, '_blank')
 }

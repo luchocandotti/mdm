@@ -41,7 +41,6 @@ function menuar() {
 
 btnProductos.forEach(btn => {
     btn.addEventListener('click', () => {
-        //document.getElementById('width').innerText = window.innerWidth
         if (window.location.pathname != '/index.html') {
             window.location.href = '../index.html#productos'
             return
@@ -51,7 +50,6 @@ btnProductos.forEach(btn => {
             if (window.innerWidth <= 768) {
                 menuar();
                 
-                // Scroll con offset en móvil
                 const elementPosition = elementoDestino.getBoundingClientRect().top;
                 const offsetVh = window.innerHeight * 0.53
                 const offsetPosition = elementPosition + window.pageYOffset - offsetVh
@@ -61,7 +59,6 @@ btnProductos.forEach(btn => {
                     behavior: 'smooth'
                 })
             } else {
-                // Scroll normal en desktop
                 elementoDestino.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
@@ -70,22 +67,6 @@ btnProductos.forEach(btn => {
         }
     })
 })
-
-// btnProductos.forEach(btn => {
-//     btn.addEventListener('click', () => {
-//         //document.getElementById('width').innerText = window.innerWidth
-//         if (window.location.pathname != '/index.html') {
-//             window.location.href = '../index.html#productos'
-//             return
-//         }
-
-//         if (window.innerWidth <= 768) {
-//             menuar();
-//         } 
-            
-//         window.location.href = '#productos'
-//     })
-// })
 
 btnContacto.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -119,7 +100,6 @@ function hacerFocus() {
     if (window.location.hash === '#contacto') {
     const inputNombre = document.getElementById('nombre')
     if (inputNombre) {
-      // Pequeño delay para asegurar que el scroll termine
       setTimeout(() => {
         inputNombre.focus()
       }, 100)
@@ -129,6 +109,7 @@ function hacerFocus() {
 
 window.addEventListener('DOMContentLoaded', () => {
   hacerFocus()
+  cargarGrilla()
 })
 
 formulario.addEventListener('submit', wasap)
@@ -136,7 +117,6 @@ formulario.addEventListener('submit', wasap)
 function abrirAbout () {
     about.classList.toggle('nomuestra')
 
-    // Cambiar texto e icono
     if (leer.innerText.includes('LEER MÁS')) {
         leer.innerHTML = 'LEER MENOS<i class="bi bi-arrow-up ms-2"></i>'
         leer.classList.remove('btn-tertiary')
@@ -151,7 +131,6 @@ function abrirAbout () {
         leer.classList.remove('btn-secondary')
         setTimeout(() => {
             history.pushState('', document.title, window.location.pathname)
-            // window.location.hash = '#'
         }, 100)
     }
 }
@@ -162,25 +141,20 @@ servicios.forEach((servicio) => {
     })
 })
 
-
 leer.addEventListener('click', () => {
     abrirAbout()
 })
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
   const carouselElement = document.querySelector('#carouselOferta')
   
   if (carouselElement) {
-    // Forzar inicialización
     const carousel = new bootstrap.Carousel(carouselElement, {
       interval: 5000,
-      touch: true, // Asegurar que touch esté habilitado
+      touch: true,
       wrap: true
     });
     
-    // Forzar un pequeño movimiento para activar eventos táctiles
     setTimeout(() => {
       carousel.pause()
       carousel.cycle()
@@ -189,15 +163,37 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// CARGA DINÁMICA DE PRODUCTOS ----------------------------------------------------------------- //
 
+function cargarGrilla() {
+    const grilla = document.getElementById('grilla-productos')
+    if (!grilla) return
 
+    fetch('/productos.json')
+        .then(res => res.json())
+        .then(data => {
+            let output = ''
 
-// btnProductos.addEventListener('click', () => {
-//     const elementoDestino = document.getElementById('productos')
-//     if (elementoDestino) {
-//         elementoDestino.scrollIntoView({ 
-//             behavior: 'smooth', 
-//             block: 'start' 
-//         })
-//     }
-// })
+            data.forEach(producto => {
+                output += `
+                    <div class="col-6 col-lg-3">
+                        <div class="productos bg-white shadow-sm p-3 text-center rounded-1 position-relative overflow-hidden">
+                            <a href="${producto.href}">
+                                <img src="./img/productos/${producto.id}.webp" class="card-img-top mb-2" alt="${producto.tipo} ${producto.marca} ${producto.nombre}" loading="lazy">
+                                <div class="texto position-relative z-2">
+                                    <p class="m-0"><span class="fw-bold">${producto.tipo} </span>${producto.marca} ${producto.nombre} ${producto.presentacion}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                `
+            })
+
+            const temp = document.createElement('div')
+            temp.innerHTML = output
+            grilla.replaceChildren(...temp.childNodes)
+        })
+        .catch(err => {
+            console.error('Error al cargar productos.json:', err)
+        })
+}

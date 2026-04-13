@@ -1,0 +1,101 @@
+[
+  {
+    "id": "I-01-S",
+    "categoria": "impermeabilizantes",
+    "tipo": "Membrana Líquida",
+    "marca": "Sika",
+    "nombre": "Acryl-Techo",
+    "presentacion": "20L Blanco",
+    "href": "/productos/membrana-sika-acril-techo.html"
+  },
+  {
+    "id": "MI-01-S",
+    "categoria": "impermeabilizantes",
+    "tipo": "Membrana",
+    "marca": "Sika",
+    "nombre": "Sikalastic-560",
+    "presentacion": "20kg",
+    "href": "/productos/membrana-sika-sikalastic560.html"
+  },
+  {
+    "id": "SA-01-S",
+    "categoria": "selladores",
+    "tipo": "Sellador",
+    "marca": "Sika",
+    "nombre": "Sikaflex-1A",
+    "presentacion": "300ml",
+    "href": "/productos/sellador-sika-sikaflex1a.html"
+  },
+  {
+    "id": "MRH-01-S",
+    "categoria": "morteros",
+    "tipo": "Mortero Cementício",
+    "marca": "Sika",
+    "nombre": "Monotop-107",
+    "presentacion": "25kg",
+    "href": "/productos/mortero-sika-monotop107.html"
+  },
+  {
+    "id": "RT-01-S",
+    "categoria": "revestimientos",
+    "tipo": "Revestimiento Marble",
+    "marca": "Revear",
+    "nombre": "Marble",
+    "presentacion": "25kg",
+    "href": "/productos/revestimiento-marble-revear.html"
+  },
+  {
+    "id": "PL-02-S",
+    "categoria": "pinturas",
+    "tipo": "Pintura ProLatex Interior",
+    "marca": "Casablanca",
+    "nombre": "ProLatex Interior",
+    "presentacion": "20L",
+    "href": "/productos/pintura-prolatex-Interior-exterior-casablanca.html"
+  },
+  {
+    "id": "PEA-01-S",
+    "categoria": "pinturas",
+    "tipo": "Pintura Antihumedad Interior",
+    "marca": "Sinteplast",
+    "nombre": "Recublock",
+    "presentacion": "4L",
+    "href": "/productos/pintura-antihumedad-interior-sinteplast-recublock.html"
+  },
+  {
+    "id": "EAT-01-S",
+    "categoria": "pisos",
+    "tipo": "Epoxi Alto Tránsito",
+    "marca": "Sinteplast",
+    "nombre": "Recufloor",
+    "presentacion": "4L",
+    "href": "/productos/epoxi-alto-transito-sinteplast-recufloor.html"
+  },
+  {
+    "id": "PPE-01-S",
+    "categoria": "impermeabilizantes",
+    "tipo": "Impermeabilizante Blanco",
+    "marca": "Casablanca",
+    "nombre": "Casaseca",
+    "presentacion": "25kg",
+    "href": "/productos/impermeabilizante-blanco-casablanca-casaseca.html"
+  },
+  {
+    "id": "PLF-01-S",
+    "categoria": "impermeabilizantes",
+    "tipo": "Silicona Impermeabilizante Ladrillos",
+    "marca": "Sika",
+    "nombre": "Sikaguard",
+    "presentacion": "20L",
+    "href": "/productos/silicona-impermeabilizante-ladrillos-sika-sikaguard.html"
+  },
+  {
+    "id": "PRI-01-S",
+    "categoria": "pisos",
+    "tipo": "Endurecedor Mineral",
+    "marca": "Sika",
+    "nombre": "Sikafloor-3 QuartzTop",
+    "presentacion": "25kg",
+    "href": "/productos/endurecedor-mineral-sika-sikafloor-3-quartztop.html"
+  }
+]
