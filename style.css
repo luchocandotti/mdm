@@ -32,9 +32,6 @@ body{
   font-style: normal;
 }
 
-p, li {
-    font-weight: 300;
-}
 
 ul {
     list-style: none;
@@ -49,10 +46,6 @@ a {
 }
 a:hover {
     text-decoration: underline;
-}
-
-.categoria {
-    font-size: 0.85rem;
 }
 
 .dash-list li::before {
