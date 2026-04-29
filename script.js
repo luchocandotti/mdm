@@ -160,7 +160,7 @@ function cargarGrilla() {
                     <div class="col-6 col-lg-3">
                         <div class="productos bg-white shadow-sm p-3 text-center rounded-1 position-relative overflow-hidden">
                             <a href="${producto.href}">
-                                <img src="/img/productos/${producto.id}.webp" class="card-img-top mb-2" alt="${producto.tipo} ${producto.marca} ${producto.nombre}" loading="lazy">
+                                <img src="/productos/img/small/${producto.id}.webp" class="card-img-top mb-2" alt="${producto.tipo} ${producto.marca} ${producto.nombre}" loading="lazy">
                                 <div class="texto position-relative z-2">
                                     <p class="m-0"><span class="fw-bold">${producto.tipo} </span>${producto.marca} ${producto.nombre} ${producto.presentacion}</p>
                                 </div>

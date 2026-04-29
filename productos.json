@@ -7,5 +7,23 @@
     "nombre": "Sikalastic-560",
     "presentacion": "20kg Blanco",
     "href": "/productos/membrana-sika-sikalastic560.html"
+  },
+  {
+    "id": "MI-02-S",
+    "categoria": "impermeabilizantes",
+    "tipo": "Malla No Tejida",
+    "marca": "Sika",
+    "nombre": "Tex-75",
+    "presentacion": "Rollo 26m²",
+    "href": "/productos/malla-sika-tex-75.html"
+  },
+  {
+    "id": "MI-03-S",
+    "categoria": "impermeabilizantes",
+    "tipo": "Membrana Acrilica",
+    "marca": "Sika",
+    "nombre": "Sikafill Techos",
+    "presentacion": "Balde de 1kg, 5kg, 20kg Blanco",
+    "href": "/productos/membrana-sika-sikafill-techos.html"
   }
 ]
