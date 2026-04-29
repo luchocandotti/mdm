@@ -3,3 +3,7 @@
     Header set Pragma "no-cache"
     Header set Expires "0"
 </FilesMatch>
+
+ExpiresActive On
+ExpiresByType text/css "access plus 0 seconds"
+ExpiresByType application/javascript "access plus 0 seconds"
