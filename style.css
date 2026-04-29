@@ -51,6 +51,17 @@ a:hover {
     text-decoration: underline;
 }
 
+.categoria {
+    font-size: 0.85rem;
+}
+
+.dash-list li::before {
+  content: "— ";
+}
+.dash-list li:not(:last-child) {
+    margin-bottom: 0.3rem;
+}
+
 .menu .btn {
     text-transform: uppercase;
     padding: 10px 0 10px 0;
