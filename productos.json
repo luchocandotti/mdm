@@ -1,47 +1,11 @@
 [
   {
-    "id": "I-01-S",
+    "id": "MI-01-S",
     "categoria": "impermeabilizantes",
     "tipo": "Membrana Líquida",
     "marca": "Sika",
-    "nombre": "Acryl-Techo",
-    "presentacion": "20L Blanco",
-    "href": "/productos/membrana-sika-acril-techo.html"
-  },
-  {
-    "id": "I-02-S",
-    "categoria": "impermeabilizantes",
-    "tipo": "Tapagoteras",
-    "marca": "Sika",
-    "nombre": "Sikafill",
-    "presentacion": "5L Transparente",
-    "href": "/productos/tapagoteras-sika-sikafill.html"
-  },
-  {
-    "id": "I-03-S",
-    "categoria": "impermeabilizantes",
-    "tipo": "Tapagoteras",
-    "marca": "Sika",
-    "nombre": "Inertol",
-    "presentacion": "5L Transparente",
-    "href": "/productos/tapagoteras-sika-intertol-infiltracion.html"
-  },
-  {
-    "id": "SA-01-S",
-    "categoria": "selladores",
-    "tipo": "Sellador Acrílico",
-    "marca": "Sika",
-    "nombre": "Sikacryl Profesional",
-    "presentacion": "Varias",
-    "href": "/productos/sellador-sika-sikacryl-profesional.html"
-  },
-  {
-    "id": "SA-02-S",
-    "categoria": "selladores",
-    "tipo": "Sellador",
-    "marca": "Sika",
-    "nombre": "Sikaflex-1A Plus",
-    "presentacion": "600cc",
-    "href": "/productos/sellador-sika-sikaflex-1a-plus-600cc.html"
+    "nombre": "Sikalastic-560",
+    "presentacion": "20kg Blanco",
+    "href": "/productos/membrana-sika-sikalastic560.html"
   }
 ]
