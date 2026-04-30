@@ -56,10 +56,19 @@
   {
     "id": "AM-03-S",
     "categoria": "Adhesivos y Morteros",
-    "tipo": "Mortero Cementício ",
+    "tipo": "Mortero Cementício",
     "marca": "Sika",
     "nombre": "MonoTop-107",
     "presentacion": "Bolsa 25kg",
     "href": "/productos/mortero-sika-monotop-107.html"
+  },
+  {
+    "id": "S-01-S",
+    "categoria": "Selladores",
+    "tipo": "Sellador Polurietánico",
+    "marca": "Sika",
+    "nombre": "Sikaflex-1 A Plus",
+    "presentacion": "Cartucho 300ml Gris",
+    "href": "/productos/sellador-sika-sikaflex-1A-plus.html"
   }
 ]

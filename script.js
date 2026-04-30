@@ -53,7 +53,7 @@ function init() {
 
     btnProductos.forEach(btn => {
         btn.addEventListener('click', () => {
-            if (window.location.pathname != '/index.html') {
+            if (window.location.pathname !== '/index.html' && window.location.pathname !== '/') {
                 window.location.href = '/index.html#productos'
                 return
             }
@@ -206,4 +206,14 @@ window.addEventListener('DOMContentLoaded', () => {
     cargarGrilla()
     initCarousel()
     initProducto()
+
+     // Scroll a #productos si se llegó desde otra página
+    if (window.location.hash === '#productos') {
+        const elementoDestino = document.getElementById('productos')
+        if (elementoDestino) {
+            setTimeout(() => {
+                elementoDestino.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }, 300)
+        }
+    }
 })
