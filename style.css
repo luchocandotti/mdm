@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,14 +9,16 @@ html, body {
     scroll-behavior: smooth;
     background-color: #F8F8F8;
 }
-body{
+
+body {
     font-family: "Nunito Sans", sans-serif;
     font-size: 14px;
 }
+
 .tapa {
-    width: 100vw;   /* ancho del viewport, no altura */
+    width: 100vw;
     height: 50vh;
-    transform: translateY(-50vh); /* mejor -50vh en vez de -49vh */
+    transform: translateY(-50vh);
     background-color: #F8F8F8;
 }
 
@@ -26,10 +28,10 @@ body{
 }
 
 .titulo {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .card-img-top {
@@ -50,57 +52,56 @@ a {
     text-decoration: none;
     color: #146c43;
 }
-a:hover {
-    text-decoration: underline;
-}
 
 .dash-list li::before {
-  content: "— ";
+    content: "— ";
 }
+
 .dash-list li:not(:last-child) {
     margin-bottom: 0.3rem;
 }
 
+/* ---- NAV ---- */
+
 .menu .btn {
     text-transform: uppercase;
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
     font-size: 12px;
     transition: all 0.5s ease;
 }
-.menu .btn:hover {
-    transform: translate(0,-5px);
-}
+
 .btn-consulta {
     text-transform: uppercase;
     font-size: 12px;
 }
 
 .caracteristica {
-    padding: 11px 0 11px 0;
+    padding: 11px 0;
     transition: transform 0.5s ease;
 }
 
-.caracteristica:hover {
-    transform: translate(0,-5px);
-}
-
 #btn-movil {
-    padding: 9px 14px 9px 14px;
+    padding: 9px 14px;
 }
 
 #movil {
     transform: translateY(-50vh);
     transition: all 0.6s ease-in-out;
+
     & .btn {
         text-transform: uppercase;
         font-size: 12px;
-        padding: 10px 0 10px 0;
+        padding: 10px 0;
     }
 }
+
 #back, #send, #leer {
     text-transform: uppercase;
     font-size: 12px;
 }
+
+/* ---- LAYOUT ---- */
+
 #intro {
     min-height: 100dvh;
     display: flex;
@@ -117,7 +118,7 @@ a:hover {
 #productos,
 #nosotros,
 #contacto {
-  scroll-margin-top: 10px; /* Desktop */
+    scroll-margin-top: 10px;
 }
 
 .border-bottom {
@@ -125,16 +126,20 @@ a:hover {
     border-width: 0.1px;
 }
 
+/* ---- FORMULARIO ---- */
+
 textarea {
-  resize: none; /* desactiva el resize */
-}
-.form-control:focus {
-  border-color: #ced4da; /* Mantiene el borde gris original */
-  box-shadow: none;
-  background-color: #fff9e6;
-  outline: none; /* Elimina el outline por defecto */
+    resize: none;
 }
 
+.form-control:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+    background-color: #fff9e6;
+    outline: none;
+}
+
+/* ---- BTN ADD ---- */
 
 .btn-add {
     text-transform: uppercase;
@@ -142,31 +147,35 @@ textarea {
     transform: scale(0);
     transition: all 0.3s ease-in-out;
 }
+
 .btn-add::after {
-  content: "1";
-  font-size: 8px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  position: absolute;
-  top: -4px;
-  right: -4px;
-  width: 14px;
-  height: 14px;
-  background: #DC3545;
-  border-radius: 50%;
+    content: "1";
+    font-size: 8px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 14px;
+    height: 14px;
+    background: #DC3545;
+    border-radius: 50%;
 }
+
 .btnScale {
     transform: scale(1);
 }
 
-
+/* ---- CAROUSEL ---- */
 
 .carousel-item {
-  transition: transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 }
+
+/* ---- SERVICIOS ---- */
+
 .servicios {
     transition: all 0.5s ease;
 }
@@ -185,43 +194,87 @@ textarea {
     text-transform: uppercase;
 }
 
-.servicios:hover {
-    transform: translate(0,-10px);
+/* ---- PRODUCTOS ---- */
+
+.productos {
+    border: 1px solid transparent;
+    transition: border-color 0.5s ease, transform 0.5s ease;
 }
 
-.productos, .productos img {
-    transition: all 0.5s ease;
+.productos img {
+    transition: scale 0.5s ease;
 }
-.productos:hover {
-    cursor: pointer;
-    border: 1px solid #ffc107;
-    transform: translate(0,-10px);
-    img {
-        scale: 110%;
-    }
-}
+
 .productos a {
     color: #000;
 }
+
+/* ---- TABLAS ---- */
 
 .tabla-redondeada {
     border-radius: 0.375rem;
     overflow: hidden;
 }
+
 .tabla-redondeada td {
-   width: 50%;
-   padding: 10px 0 10px 14px;
+    width: 50%;
+    padding: 10px 0 10px 14px;
+}
+
+/* ---- ABOUT ---- */
+
+#about {
+    max-height: 1000px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+#about.nomuestra {
+    max-height: 0;
+    opacity: 0;
+}
+
+/* ---- FLECHA ICONS ---- */
+
+.flecha li:nth-child(1) i { color: #019EDB; }
+.flecha li:nth-child(2) i { color: #33BB9C; }
+.flecha li:nth-child(3) i { color: #8CC63F; }
+.flecha li:nth-child(4) i { color: #FBAD17; }
+.flecha li:nth-child(5) i { color: #B468A0; }
+
+
+/* ============================================
+   HOVERS — solo dispositivos con mouse
+============================================ */
+
+@media (hover: hover) and (pointer: fine) {
+    a:hover                { text-decoration: underline; }
+    .menu .btn:hover       { transform: translate(0, -5px); }
+    .caracteristica:hover  { transform: translate(0, -5px); }
+    .servicios:hover       { transform: translate(0, -10px); }
+    .productos:hover       {
+        cursor: pointer;
+        border: 1px solid #ffc107;
+        transform: translate(0, -10px);
+
+        img { scale: 110%; }
+    }
 }
 
 
-@media(max-width:768px) {
+/* ============================================
+   MOBILE  max-width: 768px
+============================================ */
+
+@media (max-width: 768px) {
     .container {
-        padding: 0 40px 0 40px;
+        padding: 0 40px;
     }
     .carousel-inner {
         height: 150px;
     }
-    .carousel-item img{
+    .carousel-item img {
         height: 150px;
         object-fit: cover;
         object-position: center;
@@ -230,63 +283,23 @@ textarea {
         transition: transform 0.4s ease-in-out;
     }
     .servicios i {
-    font-size: 30px;
+        font-size: 30px;
     }
     .servicios span {
-    font-size: 9px;
-    }
-    .servicios:hover {
-        transform: none;
+        font-size: 9px;
     }
     .tapa {
-    transform: translateY(-49.5vh);
+        transform: translateY(-49.5vh);
     }
-    /* #productos, #contacto {
-    scroll-margin-top: 54vh;
-    } */
 }
+
+
+/* ============================================
+   DESKTOP  min-width: 768px
+============================================ */
 
 @media (min-width: 768px) {
     .w-md-20 {
         width: 20% !important;
     }
-}
-
-/* .nomuestra {
-    visibility: hidden;
-    height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
-} */
-
-#about {
-  max-height: 1000px;
-  opacity: 1;
-  overflow: hidden;
-  transition: max-height 0.7s ease-out, opacity 0.7s ease-out;
-}
-
-#about.nomuestra {
-  max-height: 0;
-  opacity: 0;
-}
-
-.flecha li:nth-child(1) i {
-  color: #019EDB;
-}
-
-.flecha li:nth-child(2) i {
-  color: #33BB9C;
-}
-
-.flecha li:nth-child(3) i {
-  color: #8CC63F;
-}
-
-.flecha li:nth-child(4) i {
-  color: #FBAD17;
-}
-
-.flecha li:nth-child(5) i {
-  color: #B468A0;
 }
