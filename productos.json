@@ -25,5 +25,41 @@
     "nombre": "Sikafill Techos",
     "presentacion": "Balde de 1kg, 5kg, 20kg Blanco",
     "href": "/productos/membrana-sika-sikafill-techos.html"
+  },
+  {
+    "id": "MI-04-S",
+    "categoria": "impermeabilizantes",
+    "tipo": "Humedad Ascendente",
+    "marca": "Sika",
+    "nombre": "Inertol Infiltracion",
+    "presentacion": "Bidón plástico de 5Lts, 10Lts, 20Lts",
+    "href": "/productos/impermeabilizante-sika-inertol-infiltracion.html"
+  },
+  {
+    "id": "AM-01-S",
+    "categoria": "Adhesivos y Morteros",
+    "tipo": "Gel",
+    "marca": "Sika",
+    "nombre": "Sikadur-32",
+    "presentacion": "Juegos predosificados de 1kg, 5kg",
+    "href": "/productos/adhesivo-sika-sikadur-32.html"
+  },
+  {
+    "id": "AM-02-S",
+    "categoria": "Adhesivos y Morteros",
+    "tipo": "Revestimiento Cementício",
+    "marca": "Sika",
+    "nombre": "SikaTop Seal-107 Flex",
+    "presentacion": "Juego 25kg A+B",
+    "href": "/productos/revestimiento-sika-sikatop-seal-107.html"
+  },
+  {
+    "id": "AM-03-S",
+    "categoria": "Adhesivos y Morteros",
+    "tipo": "Mortero Cementício ",
+    "marca": "Sika",
+    "nombre": "MonoTop-107",
+    "presentacion": "Bolsa 25kg",
+    "href": "/productos/mortero-sika-monotop-107.html"
   }
 ]
