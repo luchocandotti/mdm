@@ -70,5 +70,23 @@
     "nombre": "Sikaflex-1 A Plus",
     "presentacion": "Cartucho 300ml Gris",
     "href": "/productos/sellador-sika-sikaflex-1A-plus.html"
+  },
+  {
+    "id": "S-02-S",
+    "categoria": "Selladores",
+    "tipo": "Sellador Polurietánico",
+    "marca": "Sika",
+    "nombre": "Sikaflex-1 A Plus",
+    "presentacion": "Unipack 600ml Gris",
+    "href": "/productos/sellador-sika-sikaflex-1A-plus-unipack.html"
+  },
+  {
+    "id": "C-01-S",
+    "categoria": "Curadores",
+    "tipo": "Curador",
+    "marca": "Sika",
+    "nombre": "Antisol Normalizado",
+    "presentacion": "Balde 20Lts",
+    "href": "/productos/curador-sika-antisol-normalizado.html"
   }
 ]
