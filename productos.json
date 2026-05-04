@@ -31,9 +31,18 @@
     "categoria": "impermeabilizantes",
     "tipo": "Humedad Ascendente",
     "marca": "Sika",
-    "nombre": "Inertol Infiltracion",
+    "nombre": "Inertol Infiltración",
     "presentacion": "Bidón plástico de 5Lts, 10Lts, 20Lts",
     "href": "/productos/impermeabilizante-sika-inertol-infiltracion.html"
+  },
+  {
+    "id": "A-01-S",
+    "categoria": "accesorios",
+    "tipo": "Embudo",
+    "marca": "Sika",
+    "nombre": "Inertol Infiltración",
+    "presentacion": "",
+    "href": "/productos/accesorio-sika-embudo-inertol-infiltracion.html"
   },
   {
     "id": "AM-01-S",
@@ -67,7 +76,7 @@
     "categoria": "Selladores",
     "tipo": "Sellador Polurietánico",
     "marca": "Sika",
-    "nombre": "Sikaflex-1 A Plus",
+    "nombre": "Sikaflex-1A Plus",
     "presentacion": "Cartucho 300ml Gris",
     "href": "/productos/sellador-sika-sikaflex-1A-plus.html"
   },
@@ -76,7 +85,7 @@
     "categoria": "Selladores",
     "tipo": "Sellador Polurietánico",
     "marca": "Sika",
-    "nombre": "Sikaflex-1 A Plus",
+    "nombre": "Sikaflex-1A Plus",
     "presentacion": "Unipack 600ml Gris",
     "href": "/productos/sellador-sika-sikaflex-1A-plus-unipack.html"
   },
